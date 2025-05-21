@@ -1,13 +1,23 @@
-booba for an error
-argoomba
+
 ; Some comment
 
    ; Some comment with spaces before it
 
-mov a, 16
-mov 16, a
-mov b, [a + 8]
-mov [234a9b], 29348
+mov a, 32
+mov a, b
+mov a, [32]
+mov a, [b]
+mov a, [b + 32]
+mov a, [b + c]
+mov [32], 32
+mov [32], a
+mov [a], 32
+mov [a], b
+mov [a + 32], 32
+mov [a + 32], b
+mov [a + b], 32
+mov [a + b], c
+mov [32 + a], b
 
 and c
 and 3289
@@ -17,9 +27,7 @@ and [b + 439]
 and [439 + b]
 and [c + d]
 
-or d
-
-shr
+shr a
 shl
 
 inc a
