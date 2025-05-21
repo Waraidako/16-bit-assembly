@@ -3,16 +3,14 @@ import sys
 import os
 
 # Get the original file's location
-#if (len(sys.argv) == 2):
-#    target_file = sys.argv[1]
-#    if (target_file[0] != '/'):
-#        target_file = os.getcwd() + '/' + target_file
-#    print('Original file: ' + target_file, flush=True)
-#else:
-#    print('Error: invalid number of arguments', flush=True)
-#    sys.exit()
-
-target_file = 'hello.asm'
+if (len(sys.argv) == 2):
+    target_file = sys.argv[1]
+    if (target_file[0] != '/'):
+        target_file = os.getcwd() + '/' + target_file
+    print('Original file: ' + target_file, flush=True)
+else:
+    print('Error: invalid number of arguments', flush=True)
+    sys.exit()
 
 # Open the original file
 original_contents = []
